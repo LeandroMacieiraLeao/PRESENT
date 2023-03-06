@@ -31,16 +31,19 @@ print('acrescente mais 10% a medida que é', bap, 'm²')
 #Tt_mq=(é o m² + 10%)
 Tt_mq=m_q+bap
 print('o valor total é', Tt_mq, 'm²')
+
 lata=(Tt_mq//108)
-print(f'precisa compra {lata} lata de 18 lt')
-
+lata1=(lata*108)
+print(f'Precisa Compra>>>> {lata} lata de 18 lt')
+print(lata1)
  
-
 # 1 lt (um litro ) pinta 6m²
-galão=(Tt_mq/6)
-print(f'comprar{galão}')
+galão=(Tt_mq-lata1)/21.6
+c_galao= (galão+0.99)//1
+
+print(f'Comprar apenas >>>>{c_galao} galões de 3.6 lts')
 #qt_G= quantidade de galões
-qt_G=(galão / 3.6)//0.7
+qt_G=(galão / 3.6)
 
 #if Tt_mq <= 107:
 # print(f'comprar apenas{qt_G}')
